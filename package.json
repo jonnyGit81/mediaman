@@ -1,0 +1,25 @@
+{
+  "name": "mediaman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "cross-env": "5.2.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "tsc": "tsc --declaration",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url .",
+    "watch": "parcel watch index.html",
+    "serve": "npm start",
+    "start": "parcel serve --open --port 3000 index.html"
+  },
+  "author": "jonny <jonny.marcello@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "class-transformer": "^0.2.0",
+    "localforage": "^1.7.3",
+    "reflect-metadata": "^0.1.12"
+  }
+}
